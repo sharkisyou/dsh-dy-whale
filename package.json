@@ -1,7 +1,7 @@
 {
   "name": "dy-whale",
-  "version": "0.1.0",
-  "description": "抖音版只读宠物（DSH 插件）：按作息自己醒、刷抖音热榜/视频/评论、写两本日记，把值得的留给你。数据能力来自 dsh-douyin。",
+  "version": "0.2.0",
+  "description": "抖音版只读宠物（DSH 插件）：按作息自己醒、刷抖音热榜/视频/评论、写两本日记；设置页内可扫码登录。",
   "license": "MIT",
   "type": "module",
   "main": "lib/index.js",
@@ -19,6 +19,10 @@
   "dsh": {
     "bundle": {
       "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": []
     }
   },
   "keywords": [
