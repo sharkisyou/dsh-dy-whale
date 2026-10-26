@@ -1,0 +1,44 @@
+{
+  "name": "dy-whale",
+  "version": "0.1.0",
+  "description": "抖音版只读宠物（DSH 插件）：按作息自己醒、刷抖音热榜/视频/评论、写两本日记，把值得的留给你。数据能力来自 dsh-douyin。",
+  "license": "MIT",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "tools",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "douyin",
+    "whale",
+    "agent"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sharkisyou/dsh-dy-whale.git"
+  },
+  "homepage": "https://github.com/sharkisyou/dsh-dy-whale",
+  "bugs": {
+    "url": "https://github.com/sharkisyou/dsh-dy-whale/issues"
+  },
+  "author": "sharkisyou",
+  "scripts": {
+    "check": "node --check lib/index.js && node --check lib/plan.js"
+  }
+}

@@ -1,0 +1,7 @@
+# dy-whale —— DSH bundle patch
+#
+# 宿主半边只做生物钟与投递；抖音数据能力由 dsh-douyin 插件提供。
+# 安装：dsh plugin --profile web add "link:/home/yangweikang/share/dy-whale"
+- insert:
+    - id: dy-whale
+      name: dy-whale
